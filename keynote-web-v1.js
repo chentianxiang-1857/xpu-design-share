@@ -870,16 +870,16 @@ const slides = [
     ]
   },
   {
-    title: "李娟不是案例素材",
-    kicker: "人物现场",
+    title: "先看一段真实探访",
+    kicker: "砀山探访视频",
     type: "video",
-    video: "assets/site/dangshan-video/dangshan-lijuan.mp4",
-    poster: "assets/site/dangshan/dangshan-cover.jpg",
-    body: "她让砀山不是一个项目名，而是一个真实的人、真实的家庭、真实的地方。",
+    video: "assets/runtime/videos/dangshan-field-visit.mp4",
+    poster: "assets/runtime/posters/dangshan-field-visit.png",
+    body: "先让学生进入现场：土地、农户、产品和真实处境，才是砀山项目的方法入口。",
     notes: [
-      "这一页不要急着讲方法。",
-      "让学生先看到人，再讲为什么设计不能只在屏幕里自我完成。",
-      "砀山的价值就在于，它把设计师从图形、包装、页面，带到了真实人的处境里。"
+      "这里换成探访视频，里面有更完整的现场感，也能承接李娟相关故事。",
+      "不要急着讲品牌方法，先让大家进入真实地方和真实人的处境。",
+      "看完以后再进入信任触点、包装和公共品牌推导，逻辑会更自然。"
     ]
   },
   {
@@ -1014,15 +1014,15 @@ const slides = [
     ]
   },
   {
-    title: "李娟不是案例素材",
+    title: "唐怀志和真实的人",
     kicker: "人物视频",
     type: "video",
-    video: "assets/runtime/videos/dangshan-lijuan-beijing-share.mp4",
-    poster: "assets/runtime/posters/dangshan-lijuan-beijing-share.mp4.png",
-    body: "她让砀山不是一个项目名，而是一个真实的人、真实的家庭、真实的地方。",
+    video: "assets/runtime/videos/dangshan-tang-huaizhi.mov",
+    poster: "assets/runtime/posters/dangshan-tang-huaizhi.png",
+    body: "项目不是只面对一个品牌名，而是面对真实的人、真实的家庭、真实的地方。",
     notes: [
-      "这段视频来自北京分享 Keynote 提取视频：北京分享_视频_07_李娟-2381.mp4。",
-      "这里不要急着讲方法，让学生先看到人。",
+      "这里换成唐怀志相关片段，和前面的探访视频形成两个不同证据。",
+      "这一页的重点是：人不是案例素材，人是这个项目为什么成立的理由。",
       "看完以后再进入信任触点和包装证据，逻辑会更稳。"
     ]
   },
@@ -1108,12 +1108,12 @@ const slides = [
     ]
   },
   {
-    title: "先进入产品研发现场",
+    title: "先进入产品感受",
     kicker: "SmartFIT 视频",
     type: "video",
-    video: "assets/site/smartfit-video/smartfit-rd-overview.mp4",
+    video: "assets/site/smartfit-video/smartfit-hardware-teaser.mp4",
     poster: "assets/site/smartfit/smartfit-strategy.jpg",
-    body: "这不是一个概念提案，而是从调研、硬件、交互到产品体验逐步推进的真实研发过程。",
+    body: "这不是一个概念提案，而是从硬件、交互到产品体验逐步推进的真实产品判断。",
     notes: [
       "这一页先放视频，让大家看到 SmartFIT 不是一张产品渲染图。",
       "它背后有调研、硬件形态、交互反馈和体验路径。",
@@ -1526,8 +1526,7 @@ const slides = [
     type: "contact",
     body: "方法想象® / 陈天翔",
     qrs: [
-      { label: "网站", image: "assets/site/brand/qr.png", url: "methodimagination.com" },
-      { label: "个人微信", pending: true, url: "二维码待补" }
+      { label: "网站", image: "assets/site/brand/qr.png", url: "methodimagination.com" }
     ],
     notes: [
       "这一页放在最后的最后。",
