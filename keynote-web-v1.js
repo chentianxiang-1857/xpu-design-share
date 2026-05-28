@@ -1521,7 +1521,7 @@ const slides = [
     ]
   },
   {
-    title: "保持联系",
+    title: "谢谢，也欢迎继续交流。",
     kicker: "THANK YOU",
     type: "contact",
     body: "方法想象® / 陈天翔",
