@@ -800,22 +800,29 @@ h2 {
 }
 
 .thanks-stage {
-  width: min(1180px, calc(100vw - 132px));
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 0.82fr);
+  gap: clamp(64px, 8vw, 128px);
+  align-items: center;
+  width: min(1120px, calc(100vw - 160px));
+  min-height: 64vh;
+  margin: auto;
 }
 
 .thanks-stage h2 {
-  max-width: 980px;
-  margin-bottom: 18px;
-  font-size: clamp(66px, 8vw, 128px);
+  max-width: 560px;
+  margin-bottom: 24px;
+  font-size: clamp(42px, 4.3vw, 66px);
   font-weight: 260;
-  line-height: 0.98;
+  line-height: 1.18;
 }
 
 .thanks-stage .body {
-  max-width: 680px;
-  margin-bottom: clamp(64px, 10vh, 110px);
+  max-width: 480px;
+  margin-bottom: 0;
   color: rgba(246, 241, 232, 0.58);
-  font-size: clamp(20px, 1.7vw, 28px);
+  font-size: clamp(18px, 1.45vw, 23px);
+  line-height: 1.6;
 }
 
 .contact-stage {
@@ -829,10 +836,10 @@ h2 {
 }
 
 .contact-stage h2 {
-  max-width: 600px;
+  max-width: 520px;
   margin-bottom: 30px;
   color: rgba(246, 241, 232, 0.94);
-  font-size: clamp(44px, 4.8vw, 76px);
+  font-size: clamp(42px, 4.2vw, 64px);
   font-weight: 250;
   line-height: 1.18;
   letter-spacing: 0;
@@ -848,11 +855,12 @@ h2 {
 }
 
 .school-logos {
-  display: grid;
-  grid-template-columns: minmax(420px, 1.35fr) minmax(240px, 0.65fr);
-  gap: clamp(28px, 4vw, 58px);
-  align-items: center;
-  width: min(980px, 88vw);
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 .school-logo {
@@ -861,8 +869,9 @@ h2 {
 
 .school-logo img {
   display: block;
-  width: 100%;
-  max-height: 132px;
+  width: auto;
+  max-width: min(100%, 420px);
+  max-height: 92px;
   object-fit: contain;
   object-position: left center;
   padding: 0;
@@ -882,13 +891,13 @@ h2 {
 .contact-qrs {
   display: grid;
   grid-template-columns: minmax(260px, 360px);
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 
 .contact-qr {
   margin: 0;
-  width: min(360px, 28vw);
+  width: min(320px, 26vw);
 }
 
 .contact-qr img,
@@ -1695,5 +1704,37 @@ body.overview .number {
 
   .fullbleed-copy p:not(.kicker) {
     font-size: 20px;
+  }
+
+  .thanks-stage,
+  .contact-stage {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .thanks-stage h2,
+  .contact-stage h2 {
+    max-width: 560px;
+    font-size: clamp(38px, 10vw, 54px);
+  }
+
+  .school-logos {
+    gap: 24px;
+  }
+
+  .school-logo img {
+    max-width: min(100%, 360px);
+    max-height: 76px;
+  }
+
+  .contact-qrs {
+    justify-content: start;
+  }
+
+  .contact-qr {
+    width: min(280px, 76vw);
   }
 }

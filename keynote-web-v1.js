@@ -1684,9 +1684,11 @@ function renderSlide(slide, index) {
     `).join("");
     section.innerHTML = `
       <div class="stage thanks-stage">
-        <p class="kicker">${slide.kicker || ""}</p>
-        <h2>${slide.title}</h2>
-        ${slide.body ? `<p class="body">${slide.body}</p>` : ""}
+        <div class="thanks-copy">
+          <p class="kicker">${slide.kicker || ""}</p>
+          <h2>${slide.title}</h2>
+          ${slide.body ? `<p class="body">${slide.body}</p>` : ""}
+        </div>
         <div class="school-logos">${logos}</div>
       </div>
       <div class="number">${String(index + 1).padStart(2, "0")}</div>`;
@@ -1705,9 +1707,11 @@ function renderSlide(slide, index) {
     `).join("");
     section.innerHTML = `
       <div class="stage contact-stage">
-        <p class="kicker">${slide.kicker || ""}</p>
-        <h2>${slide.title}</h2>
-        ${slide.body ? `<p class="body">${slide.body}</p>` : ""}
+        <div class="contact-copy">
+          <p class="kicker">${slide.kicker || ""}</p>
+          <h2>${slide.title}</h2>
+          ${slide.body ? `<p class="body">${slide.body}</p>` : ""}
+        </div>
         <div class="contact-qrs">${qrs}</div>
       </div>
       <div class="number">${String(index + 1).padStart(2, "0")}</div>`;
