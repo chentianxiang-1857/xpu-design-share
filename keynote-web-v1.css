@@ -916,7 +916,8 @@ h2 {
 
 .contact-qr {
   margin: 0;
-  width: min(270px, 20vw);
+  width: 100%;
+  max-width: 270px;
 }
 
 .contact-qr img,
@@ -1756,6 +1757,7 @@ body.overview .number {
   }
 
   .contact-qr {
-    width: min(240px, 41vw);
+    width: 100%;
+    max-width: 240px;
   }
 }
