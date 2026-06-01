@@ -858,13 +858,14 @@ const slides = [
     ]
   },
   {
-    title: "先看 20 秒真实现场",
-    kicker: "视频页",
+    title: "先看一段《砀山之间》",
+    kicker: "砀山之间 / 完整视频",
     type: "video",
-    video: "assets/runtime/videos/dangshan-girl-under-pear-tree-github.mp4",
-    poster: "assets/site/dangshan/dangshan-cover.jpg",
-    body: "看视频时留意：人、地方、产品、现场感。",
+    video: "assets/runtime/videos/dangshan-between-web.mov",
+    poster: "assets/runtime/posters/dangshan-between.png",
+    body: "先让真实的人、地方、产品和现场感出现，再进入品牌方法。",
     notes: [
+      "这里播放《砀山之间》的完整视频，不要急着开始解释。",
       "这些东西不是背景，它们就是设计真正要进入的世界。",
       "设计如果只停留在屏幕里，很容易忘记它最终服务的是具体的人和具体的地方。"
     ]
@@ -1014,14 +1015,14 @@ const slides = [
     ]
   },
   {
-    title: "唐怀志和真实的人",
-    kicker: "人物视频",
+    title: "固定的120度",
+    kicker: "梨树下的女孩 / 完整视频",
     type: "video",
-    video: "assets/runtime/videos/dangshan-tang-huaizhi.mov",
-    poster: "assets/runtime/posters/dangshan-tang-huaizhi.png",
-    body: "项目不是只面对一个品牌名，而是面对真实的人、真实的家庭、真实的地方。",
+    video: "assets/runtime/videos/dangshan-girl-under-pear-tree-github.mp4",
+    poster: "assets/runtime/posters/dangshan-fixed-120.png",
+    body: "项目不是只面对一个品牌名，而是面对真实的人、真实的家庭和真实的地方。",
     notes: [
-      "这里换成唐怀志相关片段，和前面的探访视频形成两个不同证据。",
+      "这里播放原始 Keynote 第 4 页的《梨树下的女孩》，开片就是“固定的120度”。",
       "这一页的重点是：人不是案例素材，人是这个项目为什么成立的理由。",
       "看完以后再进入信任触点和包装证据，逻辑会更稳。"
     ]
