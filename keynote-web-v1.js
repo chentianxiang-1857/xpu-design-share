@@ -1526,8 +1526,8 @@ const slides = [
     type: "contact",
     body: "方法想象® / 陈天翔",
     qrs: [
-      { label: "网站", image: "assets/site/brand/qr.png", url: "methodimagination.com" },
-      { label: "微信", image: "assets/site/brand/qr-wechat.png", url: "陈天翔" }
+      { label: "网站", image: "assets/site/brand/qr-website-display.png", url: "methodimagination.com" },
+      { label: "微信", image: "assets/site/brand/qr-wechat-display.png", url: "陈天翔" }
     ],
     notes: [
       "这一页放在最后的最后。",
