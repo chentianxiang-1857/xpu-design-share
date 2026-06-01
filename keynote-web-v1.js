@@ -1015,15 +1015,15 @@ const slides = [
     ]
   },
   {
-    title: "固定的120度",
-    kicker: "梨树下的女孩 / 完整视频",
+    title: "梨树下的女孩",
+    kicker: "人物现场 / 完整影片",
     type: "video",
-    video: "assets/runtime/videos/dangshan-girl-under-pear-tree-github.mp4",
-    poster: "assets/runtime/posters/dangshan-fixed-120.png",
-    body: "项目不是只面对一个品牌名，而是面对真实的人、真实的家庭和真实的地方。",
+    video: "assets/runtime/videos/dangshan-girl-under-pear-tree-full-web.mp4",
+    poster: "assets/runtime/posters/dangshan-girl-under-pear-tree-full.png",
+    body: "先把判断放下，完整看一段影片。设计面对的不是一个抽象项目，而是真实的人、真实的家庭和真实的地方。",
     notes: [
-      "这里播放原始 Keynote 第 4 页的《梨树下的女孩》，开片就是“固定的120度”。",
-      "这一页的重点是：人不是案例素材，人是这个项目为什么成立的理由。",
+      "这里播放桌面文件《梨树下的女孩.mov》的完整影片，不裁剪。",
+      "先让大家完整进入人物和现场，再讲为什么设计不能只停在图形、包装和页面。",
       "看完以后再进入信任触点和包装证据，逻辑会更稳。"
     ]
   },
