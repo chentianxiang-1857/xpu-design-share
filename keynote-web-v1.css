@@ -845,8 +845,8 @@ h2 {
 
 .contact-stage {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 420px);
-  gap: clamp(72px, 10vw, 150px);
+  grid-template-columns: minmax(0, 0.84fr) minmax(500px, 620px);
+  gap: clamp(54px, 7vw, 112px);
   align-items: center;
   width: min(1120px, calc(100vw - 160px));
   min-height: 68vh;
@@ -908,14 +908,15 @@ h2 {
 
 .contact-qrs {
   display: grid;
-  grid-template-columns: minmax(260px, 360px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 40px);
   justify-content: center;
   align-items: center;
 }
 
 .contact-qr {
   margin: 0;
-  width: min(320px, 26vw);
+  width: min(270px, 20vw);
 }
 
 .contact-qr img,
@@ -1749,10 +1750,12 @@ body.overview .number {
   }
 
   .contact-qrs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
     justify-content: start;
   }
 
   .contact-qr {
-    width: min(280px, 76vw);
+    width: min(240px, 41vw);
   }
 }

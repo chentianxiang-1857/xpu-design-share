@@ -1526,11 +1526,12 @@ const slides = [
     type: "contact",
     body: "方法想象® / 陈天翔",
     qrs: [
-      { label: "网站", image: "assets/site/brand/qr.png", url: "methodimagination.com" }
+      { label: "网站", image: "assets/site/brand/qr.png", url: "methodimagination.com" },
+      { label: "微信", image: "assets/site/brand/qr-wechat.png", url: "陈天翔" }
     ],
     notes: [
       "这一页放在最后的最后。",
-      "只保留网站二维码，黑底白码，收得干净一点。"
+      "网站和微信二维码并排，黑底白码，收得干净一点。"
     ]
   }
 ];
