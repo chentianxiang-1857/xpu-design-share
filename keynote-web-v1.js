@@ -861,7 +861,7 @@ const slides = [
     title: "先看一段《砀山之间》",
     kicker: "砀山之间 / 完整视频",
     type: "video",
-    video: "assets/runtime/videos/dangshan-between-web.mp4",
+    video: "assets/runtime/videos/dangshan-between-web-mp42.mp4",
     poster: "assets/runtime/posters/dangshan-between.png",
     body: "先让真实的人、地方、产品和现场感出现，再进入品牌方法。",
     notes: [
