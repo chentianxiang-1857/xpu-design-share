@@ -1018,7 +1018,7 @@ const slides = [
     title: "梨树下的女孩",
     kicker: "人物现场 / 完整影片",
     type: "video",
-    video: "assets/runtime/videos/dangshan-girl-under-pear-tree-full-web.mp4",
+    video: "assets/runtime/videos/dangshan-girl-under-pear-tree-full-web.mp4?v=20260604-video-track-fix",
     poster: "assets/runtime/posters/dangshan-girl-under-pear-tree-full.png",
     body: "先把判断放下，完整看一段影片。设计面对的不是一个抽象项目，而是真实的人、真实的家庭和真实的地方。",
     notes: [
