@@ -10,6 +10,7 @@
   --ink: #101010;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --display: "SF Pro Display", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --ease-out: cubic-bezier(0.2, 0.72, 0.18, 1);
 }
 
 * {
@@ -175,6 +176,131 @@ body.clean-stage .slide-progress {
   visibility: visible;
   content-visibility: visible;
   transform: translateX(0) scale(1);
+}
+
+.slide.active .stage,
+.slide.active .fullbleed-copy,
+.slide.active .source-caption,
+.slide.active .video-caption,
+.slide.active .thanks-stage,
+.slide.active .contact-stage {
+  animation: stageEnter 640ms var(--ease-out) both;
+}
+
+.slide.active .kicker {
+  animation: lineEnter 460ms var(--ease-out) 70ms both;
+}
+
+.slide.active h1,
+.slide.active h2,
+.slide.active .quote {
+  animation: titleEnter 620ms var(--ease-out) 110ms both;
+}
+
+.slide.active .body,
+.slide.active .statement-body,
+.slide.active .detail,
+.slide.active .proof,
+.slide.active .chips,
+.slide.active .meta,
+.slide.active .method-chain,
+.slide.active .school-logos,
+.slide.active .contact-qrs {
+  animation: lineEnter 560ms var(--ease-out) 190ms both;
+}
+
+.slide.active .number {
+  animation: numberEnter 680ms var(--ease-out) 280ms both;
+}
+
+.slide.active .fullbleed-bg img,
+.slide.active .media-bg img,
+.slide.active .visual img,
+.slide.active .source-page img {
+  animation: imageSettle 1400ms var(--ease-out) both;
+}
+
+.slide.active .video-toggle {
+  animation: controlEnter 520ms var(--ease-out) 220ms both;
+}
+
+.slide.active .video-next {
+  animation: controlEnterSide 520ms var(--ease-out) 300ms both;
+}
+
+@keyframes stageEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lineEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes titleEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes numberEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(8px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes imageSettle {
+  from {
+    transform: scale(1.008);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes controlEnter {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes controlEnterSide {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(6px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0) scale(1);
+  }
 }
 
 .slide::before {
@@ -1656,6 +1782,45 @@ body.overview .number {
   right: 18px;
   bottom: 12px;
   font-size: 24px;
+}
+
+body.overview .stage,
+body.overview .fullbleed-copy,
+body.overview .source-caption,
+body.overview .video-caption,
+body.overview .thanks-stage,
+body.overview .contact-stage,
+body.overview .kicker,
+body.overview h1,
+body.overview h2,
+body.overview .quote,
+body.overview .body,
+body.overview .statement-body,
+body.overview .detail,
+body.overview .proof,
+body.overview .chips,
+body.overview .meta,
+body.overview .method-chain,
+body.overview .school-logos,
+body.overview .contact-qrs,
+body.overview .number,
+body.overview img {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
 }
 
 @media (max-width: 820px) {
