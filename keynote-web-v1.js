@@ -1473,9 +1473,10 @@ const slides = [
     ]
   },
   {
-    title: "抓关联，做判断，够职业",
+    title: "抓关联，做判断，够职业，能持久",
     type: "final",
-    body: "未来有竞争力的设计师，不是更会做图的人，而是更能判断、也更能持续更新的人。",
+    finalPhrases: ["抓关联", "做判断", "够职业", "能持久"],
+    body: "未来有竞争力的设计师，不是更会做图的人，而是更能判断的人。",
     image: "assets/site/brand/qr.png",
     notes: [
       "抓关联，是看到设计和商业、用户、组织、产业之间的关系。",
@@ -1692,6 +1693,18 @@ function renderSlide(slide, index) {
           ${slide.body ? `<p class="body">${slide.body}</p>` : ""}
         </div>
         <div class="contact-qrs">${qrs}</div>
+      </div>
+      <div class="number">${String(index + 1).padStart(2, "0")}</div>`;
+    return section;
+  }
+
+  if (slide.type === "final") {
+    const phrases = (slide.finalPhrases || [slide.title]).map((phrase) => `<span>${phrase}</span>`).join("");
+    section.classList.add("final-slide");
+    section.innerHTML = `
+      <div class="stage final-stage">
+        <div class="final-title">${phrases}</div>
+        ${slide.body ? `<p class="body">${slide.body}</p>` : ""}
       </div>
       <div class="number">${String(index + 1).padStart(2, "0")}</div>`;
     return section;
